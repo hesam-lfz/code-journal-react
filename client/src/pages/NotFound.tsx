@@ -1,13 +1,12 @@
-import { Link } from 'react-router-dom';
+import './NotFound.css';
 
 export function NotFound() {
   return (
-    <div className="flex">
-      <div className="flex-1 py-12 text-center">
-        <h3>Uh oh, we could not find the page you were looking for!</h3>
-        <Link to="/" className="text-gray-700 cursor-pointer">
-          Return to the Dashboard
-        </Link>
+    <div className="NotFound-content">
+      <div className="row">
+        <div className="col text-center mb-5">
+          <h3>Uh oh, we could not find the page you were looking for!</h3>
+        </div>
       </div>
     </div>
   );

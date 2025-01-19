@@ -2,22 +2,20 @@ import { Link, Outlet } from 'react-router-dom';
 
 export function NavBar() {
   return (
-    <div>
-      <nav className="px-4 text-white bg-gray-900">
-        <ul>
-          <li className="inline-block py-2 px-4">
-            <Link to="/about" className="text-white">
-              About
-            </Link>
-          </li>
-          <li className="inline-block py-2 px-4">
-            <Link to="/" className="text-white">
-              Dashboard
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <>
+      <header className="purple-background">
+        <div className="container">
+          <div className="row">
+            <div className="column-full d-flex align-center">
+              <h1 className="white-text">Code Journal</h1>
+              <Link to="/" className="entries-link white-text">
+                <h3>Entries</h3>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </header>
       <Outlet />
-    </div>
+    </>
   );
 }
